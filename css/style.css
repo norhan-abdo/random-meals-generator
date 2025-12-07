@@ -1,0 +1,425 @@
+:root {
+
+    --main-color: #F54A00;
+}
+
+.main-color {
+
+    color: var(--main-color);
+}
+
+#header {
+
+    background-color: #FFF;
+    border-bottom: 1px solid #ffedd4;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px 0 #0000001a, 0 1px 2px -1px #0000001a;
+
+}
+
+.navbar-brand span {
+
+    width: 48px;
+    height: 48px;
+    background-color: var(--main-color);
+    box-shadow: 0 10px 15px -3px #0000001a,
+        0 4px 6px -4px #0000001a;
+}
+
+
+.navbar-nav span,
+.navbar-nav span i {
+    font-size: 20px;
+}
+
+.navbar-nav a {
+    color: #4a5565;
+    transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+
+    color: var(--main-color);
+}
+
+.navbar button {
+
+    border: none;
+    transition: 0.3s;
+
+}
+
+.navbar button:hover {
+
+    color: var(--main-color);
+}
+
+.navbar-brand h1 {
+
+    font-size: 24px;
+    font-weight: 700;
+    color: oklch(0.21 0.034 264.665);
+}
+
+.navbar-brand p {
+
+    font-size: 14px;
+    font-weight: 400;
+    color: oklch(0.551 0.027 264.364);
+    margin-bottom: 0 !important;
+}
+
+.profile-img {
+
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffb86a;
+}
+
+@media (max-width:768px) {
+
+    .navbar-collapse {
+
+        border-top: 1px solid #ffedd4;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+
+    .navbar-collapse a .profile-img {
+        width: 32px;
+        height: 32px;
+    }
+
+
+}
+
+
+.navbar-toggler:focus {
+
+    box-shadow: none !important;
+}
+
+/**********************************hero****************************/
+
+
+.inner-hero {
+
+    box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+
+}
+
+
+.time-warning {
+
+    padding: 16px;
+    background-color: #fef2f2;
+    border-left: 4px solid #fb2c36;
+    margin-bottom: 24px;
+}
+
+.time-warning span {
+
+    font-weight: 600;
+    color: oklch(0.444 0.177 26.899);
+    line-height: 24px;
+}
+
+.time-warning p {
+
+    font-weight: 400;
+    color: oklch(0.577 0.245 27.325);
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.time-warning i {
+
+    color: #fb2c36;
+    font-size: 20px;
+}
+
+
+
+.border-orannge {
+
+    border: 1px solid #ffedd4;
+}
+
+.food-description {
+    width: 90%;
+    margin: auto;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+}
+
+.reviews {
+
+    left: 24px;
+    top: 24px;
+    padding-inline: 16px;
+    padding-block: 8px;
+}
+
+#title h2 {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: oklch(0.21 0.034 264.665);
+    margin-block: 8px;
+}
+
+#title p {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a5565;
+}
+
+#title span {
+
+    padding-block: 6px;
+    padding-inline: 12px;
+}
+
+.food-description i {
+    font-size: -24px;
+}
+
+.food-description p {
+    font-size: 14px;
+    color: oklch(0.551 0.027 264.364);
+    font-weight: 400;
+}
+
+.food-description span {
+    font-size: 16px;
+    color: #101828;
+    font-weight: 700;
+
+}
+
+.icon {
+
+    width: 48px;
+    height: 48px;
+    background-color: #ffedd4;
+    border: none;
+    color: #f54a00;
+    border-radius: 12px;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background-color: #FFD7A8;
+}
+
+
+
+
+/*
+@media (max-width:768px) {
+    .right-section {
+
+        padding: 20px;
+    }
+
+}
+*/
+
+.right-section {
+
+    height: auto;
+    padding: 20px;
+
+
+}
+
+.food-img {
+    height: 400px;
+
+}
+
+
+
+@media(min-width:992px) {
+
+
+    .right-section {
+
+        padding: 30px;
+        height: 700px;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: oklch(75% .15 35/.3) transparent;
+    }
+
+    .food-img {
+        height: 100%;
+
+
+    }
+
+}
+
+
+.nav {
+    --bs-nav-link-padding-x: 0.25rem;
+
+}
+
+.nav-pills .nav-link {
+    color: #6a7282;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link:hover {
+
+    color: #364153;
+}
+
+
+
+
+.tab-content {
+
+    border-bottom: 1px solid #ebe6e7;
+    border-top: 1px solid #ebe6e7;
+    margin-top: 20px;
+    padding-block: 30px;
+}
+
+#pills-ingredients span,
+#pills-instractions span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6900;
+    color: #FFF;
+    font-weight: 700;
+}
+
+#pills-ingredients span {
+
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    border-radius: 50%;
+
+}
+
+#pills-ingredients {
+    background-color: #FFF9EC;
+    padding: 25px;
+    border-radius: 16px;
+
+}
+
+#pills-ingredients,
+#pills-instractions {
+    height: 350px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: oklch(75% .15 35/.3) transparent;
+}
+
+#pills-instractions span {
+
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+#pills-ingredients p {
+
+    color: #364153;
+    font-weight: 400;
+}
+
+#pills-instractions p {
+    margin-bottom: 0;
+    color: #364153;
+    font-weight: 400;
+}
+
+.nutrition-item {
+    background-color: #F9FAFB;
+    padding: 16px;
+
+}
+
+.nutrition-item i {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.nutrition-item span {
+
+    color: #364153;
+    font-weight: 500;
+}
+
+.nutrition-item .nutrition-item-value {
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #101828;
+}
+
+.tips-item {
+
+    background-color: #FFFBEB;
+    border-left: 4px solid #FFBB04;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.tips-item i {
+
+    color: #E17100;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+
+.try-another-btn {
+
+    background: linear-gradient(90deg, #ff6900, #fb2c36);
+    margin-top: 20px;
+    padding-block: 12px;
+    padding-inline: 24px;
+    font-weight: 600;
+    border-radius: 14px;
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    transition: 0.3s;
+}
+
+.try-another-btn:hover {
+
+    background: linear-gradient(90deg, #f54a00, #e7000b);
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+
+}

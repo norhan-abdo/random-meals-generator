@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's For Dinner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="header">
+
+            <nav class="navbar navbar-expand-md ">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <div class=" d-flex gap-2 align-items-center">
+                            <span class="text-white rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-utensils "></i>
+
+                            </span>
+                            <div>
+                                <h1 class="mb-0">What's For Dinner</h1>
+                                <p>Your daily meal inspiration</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-md-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <span class=" ms-2 d-inline-block d-md-none">Saved Recipes</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span class="ms-2 d-inline-block d-md-none">Recent</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span class="ms-2 d-inline-block d-md-none">Settings</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center " href="#">
+                                    <div class="profile-img rounded-circle overflow-hidden">
+                                        <img src="./images/imgi_1_avatar-4.jpg" alt="" class="w-100">
+                                    </div>
+                                    <span class="ms-3 d-inline-block d-md-none">Profile</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" style="background-color: #FFFBEA;" class="py-5">
+            <div class="container">
+                <div class="rounded-4 bg-white border-orannge  inner-hero overflow-hidden">
+
+
+                    <div class="row g-3">
+                        <div class="col-md-12 col-lg-5 ">
+                            <div class="food-img position-relative ">
+                                <img id="mealImg" src="" alt="" class="w-100 h-100 object-fit-cover">
+                                <div class="reviews badge bg-white rounded-pill position-absolute">
+                                    <i class="fa-solid fa-star text-warning me-1"></i>
+                                    <span id="mealRating" class="me-1"
+                                        style="color: oklch(0.21 0.034 264.665); font-weight: 600; font-size: 16px;"></span>
+                                    <span id="mealReviews"
+                                        style="font-size: 14px; color: #6a7282; font-weight: 400;"></span>
+                                </div>
+                                <div
+                                    class="food-description d-flex justify-content-evenly bg-white py-4 rounded-4 text-center position-absolute">
+                                    <div>
+                                        <i class="fa-solid fa-clock " style="color: #ff6900;"></i>
+                                        <p class="m-0">Prep Time</p>
+                                        <span id="prepTime"></span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-fire-burner" style="color: #fb2c36;"></i>
+                                        <p class="m-0">Cook Time</p>
+                                        <span id="cookTime"></span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-users" style="color: #2b7fff;"></i>
+                                        <p class="m-0">Servings</p>
+                                        <span id="servings"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-lg-7  ">
+                            <div class="right-section">
+
+                                <div id="title"
+                                    class="d-flex align-items-md-center justify-content-md-between flex-sm-column-reverse  flex-md-row">
+                                    <div>
+                                        <span id="mealLeavel" class="badge  rounded-pill me-2 "
+                                            style="background-color: #DBFCE7; color: #008236;"></span>
+                                        <span id="mealCuisine" class="badge rounded-pill"
+                                            style="background-color: #DBEAFE; color: #1447e6;"></span>
+                                        <h2 id="mealName"></h2>
+                                        <p id="mealDescribtion"></p>
+                                    </div>
+                                    <div class="d-flex align-self-sm-end align-self-md-center">
+                                        <button class="icon">
+                                            <i class="fa-solid fa-bookmark"></i>
+                                        </button>
+                                        <button class="icon">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div id="time-warning-display">
+
+
+                                </div>
+
+                                <div class="details">
+
+                                    <ul class="nav nav-pills mb-3 justify-content-around " id="pills-tab"
+                                        role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-ingredients-tab"
+                                                data-bs-toggle="pill" data-bs-target="#pills-ingredients" type="button"
+                                                role="tab" aria-controls="pills-ingredients" aria-selected="true">
+
+                                                <i class="fa-solid fa-list-check me-1"></i>
+                                                <span>Ingredients</span>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-instractions-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-instractions" type="button" role="tab"
+                                                aria-controls="pills-instractions" aria-selected="false">
+                                                <i class="fa-solid fa-book-open me-1"></i>
+                                                <span>Instructions</span>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-nutrition-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-nutrition" type="button" role="tab"
+                                                aria-controls="pills-nutrition" aria-selected="false">
+
+                                                <i class="fa-solid fa-chart-pie me-1"></i>
+                                                <span>Nutrition</span>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-tips-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-tips" type="button" role="tab"
+                                                aria-controls="pills-tips" aria-selected="false">
+
+                                                <i class="fa-solid fa-chart-pie me-1"></i>
+                                                <span>Chef's Tips</span>
+                                            </button>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-ingredients" role="tabpanel"
+                                            aria-labelledby="pills-home-tab" tabindex="0">
+
+                                            <ul id="ingredientsList" class="list-unstyled mb-0">
+
+                                            </ul>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-instractions" role="tabpanel"
+                                            aria-labelledby="pills-instractions-tab" tabindex="0">
+
+
+                                            <ul id="instructionsList" class="list-unstyled mb-0">
+
+                                            </ul>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-nutrition" role="tabpanel"
+                                            aria-labelledby="pills-nutrition-tab" tabindex="0">
+
+                                            <div class="row g-3">
+
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa-solid fa-fire d-flex justify-content-center align-items-center"
+                                                                style="    background-color: #ffedd4; color: #f54a00;"></i>
+                                                            <span>Calories</span>
+                                                        </div>
+                                                        <div id="calories" class="nutrition-item-value"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+
+                                                            <i class="fa-solid fa-dumbbell d-flex justify-content-center align-items-center"
+                                                                style="    background-color: #DBEAFE; color: #155DFC;"></i>
+                                                            <span>Protein</span>
+                                                        </div>
+                                                        <div id="protein" class="nutrition-item-value"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa-solid fa-wheat-awn d-flex justify-content-center align-items-center"
+                                                                style="    background-color: #FEF9C2; color: #d08700;"></i>
+                                                            <span>Carbohydrates</span>
+                                                        </div>
+                                                        <div id="carbohydrates" class="nutrition-item-value">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa-solid fa-droplet d-flex justify-content-center align-items-center"
+                                                                style="background-color: #FFE2E2; color: #E7000B;"></i>
+                                                            <span>Fat</span>
+                                                        </div>
+                                                        <div id="fat" class="nutrition-item-value"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa-solid fa-seedling d-flex justify-content-center align-items-center"
+                                                                style="    background-color: #DBFCE7; color: #00A63E;"></i>
+                                                            <span>Fiber</span>
+                                                        </div>
+                                                        <div id="fiber" class="nutrition-item-value"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div
+                                                        class="nutrition-item d-flex justify-content-between align-items-center rounded-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="fa-solid fa-cube d-flex justify-content-center align-items-center"
+                                                                style="    background-color: #FCE7F3; color: #E60076;"></i>
+                                                            <span>Sodium</span>
+                                                        </div>
+                                                        <div id="sodium" class="nutrition-item-value"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-tips" role="tabpanel"
+                                            aria-labelledby="pills-tips-tab" tabindex="0">
+                                        </div>
+
+                                    </div>
+
+                                    <button id="showMealBtn" class="btn try-another-btn text-white ">Try Another
+                                        Recipe</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
